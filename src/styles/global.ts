@@ -16,7 +16,7 @@ export default createGlobalStyle`
   }
 
   body, input, button{
-    font: 16px Roboto,sans-serif url();
+    font: 16px Roboto,sans-serif;
   }
 
   button{
