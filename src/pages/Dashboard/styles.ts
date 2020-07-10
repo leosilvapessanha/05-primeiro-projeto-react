@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import { shade } from 'polished'
 
-export const Title = styled.h1 `
+
+export const Title = styled.h1`
   font-size: 48px;
   color: #3a3a3a;
   max-width: 450px;
@@ -11,7 +12,7 @@ export const Title = styled.h1 `
 
 `
 
-export const Form = styled.form `
+export const Form = styled.form`
   margin-top: 40px;
   max-width: 715px;
 
@@ -39,8 +40,61 @@ export const Form = styled.form `
       transition: background-color 0.2s;
 
       &:hover{
-        background-color:${shade(0.2,'#04d361')};
+        background-color:${shade(0.2, '#04d361')};
       }
     }
 `
-export const Repositories = styled.div ``
+export const Repositories = styled.div`
+  margin-top: 80px;
+  max-width: 715px;
+
+    a{
+      background: #fff;
+      border-radius: 5px;
+      width: 100%;
+      padding: 24px;
+      display:block;
+      text-decoration: none;
+
+      display: flex;
+      align-items: center;
+      transition: transform 0.2s;
+
+      & + a{
+        margin-top: 16px;
+      }
+
+      &:hover{
+        transform: translateX(10px)
+
+      }
+
+      svg{
+          margin-left: auto;
+          color: #cbcbd6;
+        }
+
+        img{
+          width: 64px;
+          height:64px;
+          border-radius: 50%;
+        }
+
+        div{
+          margin-left: 16px;
+
+            strong{
+              font-size: 20px;
+              color: #3d3d4d;
+            }
+
+            p{
+              font-size: 18px;
+              color: #A8A8B3;
+              margin-top: 4px;
+            }
+
+
+        }
+    }
+`
