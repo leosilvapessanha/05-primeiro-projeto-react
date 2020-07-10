@@ -11,7 +11,7 @@ export const Title = styled.h1 `
 
 `
 
-export const Form = styled.form`
+export const Form = styled.form `
   margin-top: 40px;
   max-width: 715px;
 
@@ -22,12 +22,13 @@ export const Form = styled.form`
       padding: 0 24px;
       border: 0;
       border-radius:5 0 0 5;
-      color: #3a3a3a
+      color: #3a3a3a;
 
       &::placeholder{
         color: #a8a8b3;
       }
     }
+
     button{
       width: 210px;
       height: 70px;
@@ -35,10 +36,11 @@ export const Form = styled.form`
       border: 0;
       color: #FFF;
       font-weight: bold;
-      transition: background-color: 0.2s;
+      transition: background-color 0.2s;
 
       &:hover{
-        background:${shade(0.2,'#04d361')};
+        background-color:${shade(0.2,'#04d361')};
       }
     }
 `
+export const Repositories = styled.div ``
