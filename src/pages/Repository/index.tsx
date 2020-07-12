@@ -23,6 +23,7 @@ interface Repository {
 }
 
 interface issues {
+  map(arg0: (issue: any) => void): React.ReactNode
   id: number;
   title: string;
   user: {
@@ -36,7 +37,7 @@ const Repository: React.FC = () => {
 
   const [repository,setRepository]=useState<Repository | null> (null);
 
-  const [issues, setIssues] = useState<issues>([])
+  const [issues, setIssues] = useState<issues[]>([])
 
   const { params } = useRouteMatch<RepositoryParams>()
 
